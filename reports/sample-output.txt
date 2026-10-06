@@ -1,0 +1,35 @@
+# Example report (from a test run on a small VM)
+# Your own run will reflect your machine's real numbers.
+
+Linux Health Report — myserver
+Generated: 2026-10-06 17:34:59 Asia
+Uptime: up 1 hour, 10 minutes | Kernel: 7.0.0-39-generic | Load (1/5/15m): 0.94 0.74 0.46
+
+== RESOURCE SUMMARY ==
+CPU:    10.2%  [OK]
+Memory: 91.7% (7279MB / 7936MB)  [CRITICAL]
+Disk /: 2% used, 7.5G free  [OK]
+
+== TOP PROCESSES ==
+-- by CPU --
+%CPU     PID COMMAND
+ 5.8    4557 privsep-test-fu
+ 4.3      67 hatch
+ 0.1     739 hatch-execd
+ 0.0       1 systemd
+ 0.0      17 systemd-journal
+-- by memory --
+%MEM     PID COMMAND
+ 6.9      67 hatch
+ 0.1    4557 privsep-test-fu
+ 0.0       1 systemd
+ 0.0     739 hatch-execd
+ 0.0    4621 ps
+
+== SERVICE STATUS ==
+ssh: NOT RUNNING
+docker: NOT RUNNING
+cron: NOT RUNNING
+
+== FAILED SSH LOGINS (recent) ==
+Auth log not readable (needs root) — skipping.
